@@ -1,0 +1,21 @@
+//
+   Created by jessic on 2016/10/19.
+
+extends layout
+block content
+   section.login-register
+      hgroup
+         h1.theme-name(align='center') 生活记录从这里开始
+      div
+         section
+            nav.menu
+               ul.menu-lists.clearfix
+                  li
+                     a(href='/') 首页
+                  li
+                     a(href='/loginRegister') 登录
+
+                  div
+                     if name=1
+                        span #{username}
+                        a 退出
